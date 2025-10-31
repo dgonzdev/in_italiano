@@ -1,4 +1,4 @@
-require 'in_italiano/string_translations'
+require 'in_italiano/classes/string/patch'
 
 module InItaliano
   @@last_class = nil
@@ -9,4 +9,8 @@ module InItaliano
       capitalize: "capitalizzare"
     }
   }
+end
+
+class String
+  prepend InItaliano::Classes::String::Patch
 end
