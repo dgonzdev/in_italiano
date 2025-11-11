@@ -6,6 +6,7 @@ module InItaliano
 
   TRANSLATIONS = {
     string: {
+      append_as_bytes: "aggiungere come byte",
       capitalize: "capitalizzare"
     }
   }
