@@ -7,6 +7,7 @@ Gem::Specification.new do |s|
   # TODO: Add email
   # s.email       = ""
   s.files       = Dir["{lib}/**/*"]
+  spec.required_ruby_version = '>= 3.4'
   s.homepage    =
     "https://rubygems.org/gems/in_italiano"
   # TODO: Add license
