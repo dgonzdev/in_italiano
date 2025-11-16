@@ -20,6 +20,13 @@ module InItaliano
           super
         end
 
+        def bytes
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :bytes
+
+          super
+        end
+
         def capitalize
           ::InItaliano.last_class = :string
           ::InItaliano.last_method = :capitalize

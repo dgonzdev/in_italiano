@@ -1,5 +1,6 @@
 require 'in_italiano/history'
 
+require 'in_italiano/classes/array/patch'
 require 'in_italiano/classes/string/patch'
 require 'in_italiano/classes/true_class/patch'
 
@@ -8,6 +9,7 @@ module InItaliano
     string: {
       append_as_bytes: "aggiungere come byte",
       ascii_only?: "solo ascii?",
+      bytes: "i byte",
       capitalize: "capitalizzare"
     }
   }
@@ -31,6 +33,10 @@ module InItaliano
     @history ||= History.new
     @history.last_method
   end
+end
+
+class Array
+  prepend InItaliano::Classes::Array::Patch
 end
 
 class String
