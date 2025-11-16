@@ -24,8 +24,8 @@ module InItaliano
 end
 
 require 'in_italiano/classes/array/patch'
-require 'in_italiano/classes/string/patch'
 require 'in_italiano/classes/string/class_methods_patch'
+require 'in_italiano/classes/string/patch'
 require 'in_italiano/classes/true_class/patch'
 
 class Array
