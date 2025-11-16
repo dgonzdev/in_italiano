@@ -1,20 +1,7 @@
 require 'in_italiano/history'
-
-require 'in_italiano/classes/array/patch'
-require 'in_italiano/classes/string/patch'
-require 'in_italiano/classes/string/class_methods_patch'
-require 'in_italiano/classes/true_class/patch'
+require 'in_italiano/translations'
 
 module InItaliano
-  TRANSLATIONS = {
-    string: {
-      append_as_bytes: "aggiungere come byte",
-      ascii_only?: "solo ascii?",
-      bytes: "i byte",
-      capitalize: "capitalizzare"
-    }
-  }
-
   def self.last_class=(_class)
     @history ||= History.new
     @history.last_class = _class
@@ -35,6 +22,11 @@ module InItaliano
     @history.last_method
   end
 end
+
+require 'in_italiano/classes/array/patch'
+require 'in_italiano/classes/string/patch'
+require 'in_italiano/classes/string/class_methods_patch'
+require 'in_italiano/classes/true_class/patch'
 
 class Array
   prepend InItaliano::Classes::Array::Patch
