@@ -10,7 +10,7 @@ module InItaliano
             return "Cordicella"
           end
 
-          TRANSLATIONS[:string][method_name]
+          Translations.find(:string, method_name)
         end
       end
     end

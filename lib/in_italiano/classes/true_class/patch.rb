@@ -7,7 +7,7 @@ module InItaliano
 
         def method_missing(symbol, *args)
           if symbol === :in_italiano
-            translation = TRANSLATIONS[::InItaliano.last_class][::InItaliano.last_method]
+            translation = Translations.find(::InItaliano.last_class, ::InItaliano.last_method)
             ::InItaliano.last_class = nil
             ::InItaliano.last_method = nil
             translation
