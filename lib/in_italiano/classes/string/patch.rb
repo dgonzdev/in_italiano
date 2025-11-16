@@ -13,6 +13,13 @@ module InItaliano
           super
         end
 
+        def ascii_only?
+          @@last_class = :string
+          @@last_method = :ascii_only?
+
+          super
+        end
+
         def capitalize
           @@last_class = :string
           @@last_method = :capitalize

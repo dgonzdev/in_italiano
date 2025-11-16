@@ -7,6 +7,7 @@ module InItaliano
   TRANSLATIONS = {
     string: {
       append_as_bytes: "aggiungere come byte",
+      ascii_only?: "solo ascii?",
       capitalize: "capitalizzare"
     }
   }
