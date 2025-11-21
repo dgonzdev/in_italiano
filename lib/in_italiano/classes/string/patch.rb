@@ -20,6 +20,20 @@ module InItaliano
           super
         end
 
+        def b
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :b
+
+          super
+        end
+
+        def byteindex(substring, offset = 0)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :byteindex
+
+          super
+        end
+
         def bytes
           ::InItaliano.last_class = :string
           ::InItaliano.last_method = :bytes
