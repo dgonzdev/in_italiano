@@ -24,12 +24,17 @@ module InItaliano
 end
 
 require 'in_italiano/classes/array/patch'
+require 'in_italiano/classes/integer/patch'
 require 'in_italiano/classes/string/class_methods_patch'
 require 'in_italiano/classes/string/patch'
 require 'in_italiano/classes/true_class/patch'
 
 class Array
   prepend InItaliano::Classes::Array::Patch
+end
+
+class Integer
+  prepend InItaliano::Classes::Integer::Patch
 end
 
 class String

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name                  = "in_italiano"
-  s.version               = "0.0.8"
+  s.version               = "0.0.9"
   s.summary               = "In Italiano"
   s.description           = "In Italiano"
   s.authors               = ["dgonzdev"]
