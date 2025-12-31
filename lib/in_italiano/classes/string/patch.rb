@@ -48,6 +48,13 @@ module InItaliano
           super
         end
 
+        def bytesize
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :bytesize
+
+          super
+        end
+
         def capitalize
           ::InItaliano.last_class = :string
           ::InItaliano.last_method = :capitalize

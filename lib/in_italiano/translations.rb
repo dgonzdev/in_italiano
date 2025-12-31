@@ -7,6 +7,7 @@ module InItaliano
       byteindex: "indice del byte",
       byterindex: "indice dell'ultimo byte",
       bytes: "i byte",
+      bytesize: "numero di byte",
       capitalize: "capitalizzare"
     }
 
