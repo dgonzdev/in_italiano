@@ -34,6 +34,13 @@ module InItaliano
           super
         end
 
+        def byterindex(substring, offset = 0)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :byterindex
+
+          super
+        end
+
         def bytes
           ::InItaliano.last_class = :string
           ::InItaliano.last_method = :bytes

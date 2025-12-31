@@ -4,7 +4,8 @@ module InItaliano
       append_as_bytes: "aggiungere come byte",
       ascii_only?: "solo ascii?",
       b: "b",
-      byteindex: "indice dei byte",
+      byteindex: "indice del byte",
+      byterindex: "indice dell'ultimo byte",
       bytes: "i byte",
       capitalize: "capitalizzare"
     }
