@@ -55,6 +55,13 @@ module InItaliano
           super
         end
 
+        def byteslice(*args)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :byteslice
+
+          super
+        end
+
         def capitalize
           ::InItaliano.last_class = :string
           ::InItaliano.last_method = :capitalize
