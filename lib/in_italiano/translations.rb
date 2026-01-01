@@ -9,6 +9,7 @@ module InItaliano
       bytes: "i byte",
       bytesize: "numero di byte",
       byteslice: "spaccato di byte",
+      bytesplice: "giunzione di byte",
       capitalize: "capitalizzare"
     }
 
