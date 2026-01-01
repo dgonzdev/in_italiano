@@ -76,6 +76,13 @@ module InItaliano
           super
         end
 
+        def capitalize!
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :capitalize!
+
+          super
+        end
+
         def method_missing(symbol, *args)
           if symbol === :in_italiano
             translation = Translations.find(::InItaliano.last_class, ::InItaliano.last_method)

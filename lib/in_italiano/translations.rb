@@ -10,7 +10,8 @@ module InItaliano
       bytesize: "numero di byte",
       byteslice: "spaccato di byte",
       bytesplice: "giunzione di byte",
-      capitalize: "capitalizzare"
+      capitalize: "capitalizzare",
+      capitalize!: "capitalizzare!"
     }
 
     def self.find(class_name, method_name)
