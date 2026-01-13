@@ -14,7 +14,8 @@ module InItaliano
       capitalize!: "capitalizzare!",
       casecmp: "confronta senza distinzione tra maiuscole e minuscole",
       casecmp?: "confronta senza distinzione tra maiuscole e minuscole?",
-      center: "centrare"
+      center: "centrare",
+      chars: "caratteri"
     }
 
     def self.find(class_name, method_name)
