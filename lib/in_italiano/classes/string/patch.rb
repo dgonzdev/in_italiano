@@ -111,6 +111,13 @@ module InItaliano
           super
         end
 
+        def chomp(line_sep = $/)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :chomp
+
+          super
+        end
+
         def method_missing(symbol, *args)
           if symbol === :in_italiano
             translation = Translations.find(::InItaliano.last_class, ::InItaliano.last_method)

@@ -15,7 +15,8 @@ module InItaliano
       casecmp: "confronta senza distinzione tra maiuscole e minuscole",
       casecmp?: "confronta senza distinzione tra maiuscole e minuscole?",
       center: "centrare",
-      chars: "caratteri"
+      chars: "caratteri",
+      chomp: "accorciare"
     }
 
     def self.find(class_name, method_name)
