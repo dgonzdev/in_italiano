@@ -97,6 +97,13 @@ module InItaliano
           super
         end
 
+        def center(size, pad_string = '')
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :center
+
+          super
+        end
+
         def method_missing(symbol, *args)
           if symbol === :in_italiano
             translation = Translations.find(::InItaliano.last_class, ::InItaliano.last_method)
