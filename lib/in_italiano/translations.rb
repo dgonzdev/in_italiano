@@ -12,7 +12,8 @@ module InItaliano
       bytesplice: "giunzione di byte",
       capitalize: "capitalizzare",
       capitalize!: "capitalizzare!",
-      casecmp: "confronta senza distinzione tra maiuscole e minuscole"
+      casecmp: "confronta senza distinzione tra maiuscole e minuscole",
+      casecmp?: "confronta senza distinzione tra maiuscole e minuscole?"
     }
 
     def self.find(class_name, method_name)

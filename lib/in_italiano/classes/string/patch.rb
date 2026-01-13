@@ -90,6 +90,13 @@ module InItaliano
           super
         end
 
+        def casecmp?(other_string)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :casecmp?
+
+          super
+        end
+
         def method_missing(symbol, *args)
           if symbol === :in_italiano
             translation = Translations.find(::InItaliano.last_class, ::InItaliano.last_method)
