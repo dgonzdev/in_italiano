@@ -28,7 +28,7 @@ require 'in_italiano/classes/false_class/patch'
 require 'in_italiano/classes/integer/patch'
 require 'in_italiano/classes/nil_class/patch'
 require 'in_italiano/classes/string/class_methods_patch'
-require 'in_italiano/classes/string/patch'
+require 'in_italiano/classes/string/instance_methods_patch'
 require 'in_italiano/classes/true_class/patch'
 
 class Array
@@ -49,7 +49,7 @@ end
 
 class String
   extend InItaliano::Classes::String::ClassMethodsPatch
-  prepend InItaliano::Classes::String::Patch
+  prepend InItaliano::Classes::String::InstanceMethodsPatch
 end
 
 class TrueClass

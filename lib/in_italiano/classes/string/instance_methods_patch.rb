@@ -1,7 +1,7 @@
 module InItaliano
   module Classes
     module String
-      module Patch
+      module InstanceMethodsPatch
         # String Class Documentation:
         # https://docs.ruby-lang.org/en/3.4/String.html
 
