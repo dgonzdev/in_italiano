@@ -1,7 +1,7 @@
 module InItaliano
   module Classes
     module Array
-      module Patch
+      module InstanceMethodsPatch
         # Array Class Documentation:
         # https://docs.ruby-lang.org/en/3.4/Array.html
 

@@ -1,7 +1,7 @@
 module InItaliano
   module Classes
     module NilClass
-      module Patch
+      module InstanceMethodsPatch
         # Nil Class Documentation:
         # https://docs.ruby-lang.org/en/3.4/NilClass.html
 

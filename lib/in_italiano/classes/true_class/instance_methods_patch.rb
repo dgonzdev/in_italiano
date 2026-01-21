@@ -1,7 +1,7 @@
 module InItaliano
   module Classes
     module TrueClass
-      module Patch
+      module InstanceMethodsPatch
         # True Class Documentation:
         # https://docs.ruby-lang.org/en/3.4/TrueClass.html
 
