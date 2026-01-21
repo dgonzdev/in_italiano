@@ -23,28 +23,28 @@ module InItaliano
   end
 end
 
-require 'in_italiano/classes/array/patch'
-require 'in_italiano/classes/false_class/patch'
-require 'in_italiano/classes/integer/patch'
-require 'in_italiano/classes/nil_class/patch'
+require 'in_italiano/classes/array/instance_methods_patch'
+require 'in_italiano/classes/false_class/instance_methods_patch'
+require 'in_italiano/classes/integer/instance_methods_patch'
+require 'in_italiano/classes/nil_class/instance_methods_patch'
 require 'in_italiano/classes/string/class_methods_patch'
 require 'in_italiano/classes/string/instance_methods_patch'
-require 'in_italiano/classes/true_class/patch'
+require 'in_italiano/classes/true_class/instance_methods_patch'
 
 class Array
-  prepend InItaliano::Classes::Array::Patch
+  prepend InItaliano::Classes::Array::InstanceMethodsPatch
 end
 
 class FalseClass
-  prepend InItaliano::Classes::FalseClass::Patch
+  prepend InItaliano::Classes::FalseClass::InstanceMethodsPatch
 end
 
 class Integer
-  prepend InItaliano::Classes::Integer::Patch
+  prepend InItaliano::Classes::Integer::InstanceMethodsPatch
 end
 
 class NilClass
-  prepend InItaliano::Classes::NilClass::Patch
+  prepend InItaliano::Classes::NilClass::InstanceMethodsPatch
 end
 
 class String
@@ -53,5 +53,5 @@ class String
 end
 
 class TrueClass
-  prepend InItaliano::Classes::TrueClass::Patch
+  prepend InItaliano::Classes::TrueClass::InstanceMethodsPatch
 end
