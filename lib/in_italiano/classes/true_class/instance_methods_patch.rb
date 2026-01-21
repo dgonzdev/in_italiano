@@ -1,9 +1,9 @@
 module InItaliano
   module Classes
-    module NilClass
-      module Patch
-        # Nil Class Documentation:
-        # https://docs.ruby-lang.org/en/3.4/NilClass.html
+    module TrueClass
+      module InstanceMethodsPatch
+        # True Class Documentation:
+        # https://docs.ruby-lang.org/en/3.4/TrueClass.html
 
         def method_missing(symbol, *args)
           if symbol === :in_italiano

@@ -1,9 +1,9 @@
 module InItaliano
   module Classes
-    module Array
-      module Patch
-        # Array Class Documentation:
-        # https://docs.ruby-lang.org/en/3.4/Array.html
+    module NilClass
+      module InstanceMethodsPatch
+        # Nil Class Documentation:
+        # https://docs.ruby-lang.org/en/3.4/NilClass.html
 
         def method_missing(symbol, *args)
           if symbol === :in_italiano

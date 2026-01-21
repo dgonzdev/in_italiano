@@ -1,9 +1,9 @@
 module InItaliano
   module Classes
-    module TrueClass
-      module Patch
-        # True Class Documentation:
-        # https://docs.ruby-lang.org/en/3.4/TrueClass.html
+    module Array
+      module InstanceMethodsPatch
+        # Array Class Documentation:
+        # https://docs.ruby-lang.org/en/3.4/Array.html
 
         def method_missing(symbol, *args)
           if symbol === :in_italiano

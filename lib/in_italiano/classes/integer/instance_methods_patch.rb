@@ -1,7 +1,7 @@
 module InItaliano
   module Classes
     module Integer
-      module Patch
+      module InstanceMethodsPatch
         # Integer Class Documentation:
         # https://docs.ruby-lang.org/en/3.4/Integer.html
 

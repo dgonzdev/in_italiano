@@ -1,7 +1,7 @@
 module InItaliano
   module Classes
     module FalseClass
-      module Patch
+      module InstanceMethodsPatch
         # False Class Documentation:
         # https://docs.ruby-lang.org/en/3.4/FalseClass.html
 
