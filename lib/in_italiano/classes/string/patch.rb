@@ -55,9 +55,65 @@ module InItaliano
           super
         end
 
+        def byteslice(*args)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :byteslice
+
+          super
+        end
+
+        def bytesplice(*args)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :bytesplice
+
+          super
+        end
+
         def capitalize
           ::InItaliano.last_class = :string
           ::InItaliano.last_method = :capitalize
+
+          super
+        end
+
+        def capitalize!
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :capitalize!
+
+          super
+        end
+
+        def casecmp(other_string)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :casecmp
+
+          super
+        end
+
+        def casecmp?(other_string)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :casecmp?
+
+          super
+        end
+
+        def center(size, pad_string = '')
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :center
+
+          super
+        end
+
+        def chars
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :chars
+
+          super
+        end
+
+        def chomp(line_sep = $/)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :chomp
 
           super
         end

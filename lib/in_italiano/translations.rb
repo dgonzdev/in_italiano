@@ -8,7 +8,15 @@ module InItaliano
       byterindex: "indice dell'ultimo byte",
       bytes: "i byte",
       bytesize: "numero di byte",
-      capitalize: "capitalizzare"
+      byteslice: "spaccato di byte",
+      bytesplice: "giunzione di byte",
+      capitalize: "capitalizzare",
+      capitalize!: "capitalizzare!",
+      casecmp: "confronta senza distinzione tra maiuscole e minuscole",
+      casecmp?: "confronta senza distinzione tra maiuscole e minuscole?",
+      center: "centrare",
+      chars: "caratteri",
+      chomp: "accorciare"
     }
 
     def self.find(class_name, method_name)
