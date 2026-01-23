@@ -62,9 +62,27 @@ module InItaliano
           super
         end
 
-        # ===
-        # =~
-        # []
+        def ===(object)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "==="
+
+          super
+        end
+
+        def =~(regex)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "=~"
+
+          super
+        end
+
+        def [](*args)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "[]"
+
+          super
+        end
+
         # []=
 
         def append_as_bytes(*objects)
@@ -179,8 +197,20 @@ module InItaliano
           super
         end
 
-        # chomp!
-        # chop
+        def chomp!(line_sep = $/)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :chomp!
+
+          super
+        end
+
+        def chop
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :chop
+
+          super
+        end
+
         # chop!
         # chr
         # clear
