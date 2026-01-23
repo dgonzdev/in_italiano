@@ -6,14 +6,62 @@ module InItaliano
         # https://docs.ruby-lang.org/en/3.4/String.html
 
         # Instance Methods
-        # %
-        # *
-        # +
-        # +@
-        # -@
-        # <<
-        # <=>
-        # ==
+        def %(object)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "%"
+
+          super
+        end
+
+        def *(integer)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "*"
+
+          super
+        end
+
+        def +(other_string)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "+"
+
+          super
+        end
+
+        def +@
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "+@"
+
+          super
+        end
+
+        def -@
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "-@"
+
+          super
+        end
+
+        def <<(object)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "<<"
+
+          super
+        end
+
+        def <=>(other_string)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "<=>"
+
+          super
+        end
+
+        def ==(object)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "=="
+
+          super
+        end
+
         # ===
         # =~
         # []

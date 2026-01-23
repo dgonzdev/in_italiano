@@ -1,6 +1,18 @@
 module InItaliano
   class Translations
     STRING = {
+      "%" => "%",
+      "*" => "*",
+      "+" => "+",
+      "+@" => "+@",
+      "-@" => "-@",
+      "<<" => "<<",
+      "<=>" => "<=>",
+      "==" => "==",
+      "===" => "===",
+      "=~" => "=~",
+      "[]" => "[]",
+      "[]=" => "[]=",
       append_as_bytes: "aggiungere come byte",
       ascii_only?: "solo ascii?",
       b: "b",
