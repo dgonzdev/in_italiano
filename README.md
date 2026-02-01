@@ -53,6 +53,7 @@ instance_object.method.in_italiano
 
 ```
 "foobar".capitalize.in_italiano
+=> "capitalizzare"
 ```
 
 ## Similar Projects
