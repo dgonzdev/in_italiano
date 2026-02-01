@@ -2,6 +2,8 @@
 
 Ruby methods in Italiano.
 
+[Perché?](./docs/WHY.md)
+
 ## Requirements
 
 * Ruby 3.4.7+
@@ -52,11 +54,6 @@ instance_object.method.in_italiano
 ```
 "foobar".capitalize.in_italiano
 ```
-
-## Motivation
-
-* Help me learn Italiano.
-* Help you learn Italiano.
 
 ## Similar Projects
 
