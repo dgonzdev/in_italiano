@@ -53,6 +53,11 @@ instance_object.method.in_italiano
 "foobar".capitalize.in_italiano
 ```
 
+## Motivation
+
+* Help me learn Italiano.
+* Help you learn Italiano.
+
 ## Similar Projects
 
 * https://github.com/Pluvie/italian-ruby/
