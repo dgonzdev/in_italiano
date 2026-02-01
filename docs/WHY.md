@@ -1,4 +1,4 @@
 ## Why?
 
-* Help me learn Italiano.
-* Help you learn Italiano.
+* Help me learn Italian.
+* Help you learn Italian.

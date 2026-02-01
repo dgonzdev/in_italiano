@@ -1,6 +1,6 @@
 # in_italiano
 
-Ruby methods in Italiano.
+Ruby methods in Italian.
 
 [Perché?](./docs/WHY.md)
 
