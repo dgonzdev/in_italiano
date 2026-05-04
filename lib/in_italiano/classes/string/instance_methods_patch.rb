@@ -6,6 +6,85 @@ module InItaliano
         # https://docs.ruby-lang.org/en/3.4/String.html
 
         # Instance Methods
+        def %(object)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "%"
+
+          super
+        end
+
+        def *(integer)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "*"
+
+          super
+        end
+
+        def +(other_string)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "+"
+
+          super
+        end
+
+        def +@
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "+@"
+
+          super
+        end
+
+        def -@
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "-@"
+
+          super
+        end
+
+        def <<(object)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "<<"
+
+          super
+        end
+
+        def <=>(other_string)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "<=>"
+
+          super
+        end
+
+        def ==(object)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "=="
+
+          super
+        end
+
+        def ===(object)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "==="
+
+          super
+        end
+
+        def =~(regex)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "=~"
+
+          super
+        end
+
+        def [](*args)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = "[]"
+
+          super
+        end
+
+        # []=
+
         def append_as_bytes(*objects)
           ::InItaliano.last_class = :string
           ::InItaliano.last_method = :append_as_bytes
@@ -117,6 +196,126 @@ module InItaliano
 
           super
         end
+
+        def chomp!(line_sep = $/)
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :chomp!
+
+          super
+        end
+
+        def chop
+          ::InItaliano.last_class = :string
+          ::InItaliano.last_method = :chop
+
+          super
+        end
+
+        # chop!
+        # chr
+        # clear
+        # codepoints
+        # concat
+        # count
+        # crypt
+        # dedup
+        # delete
+        # delete!
+        # delete_prefix
+        # delete_prefix!
+        # delete_suffix
+        # delete_suffix!
+        # downcase
+        # downcase!
+        # dump
+        # each_byte
+        # each_char
+        # each_codepoint
+        # each_grapheme_cluster
+        # each_line
+        # empty?
+        # encode
+        # encode!
+        # encoding
+        # end_with?
+        # eql?
+        # force_encoding
+        # getbyte
+        # grapheme_clusters
+        # gsub
+        # gsub!
+        # hash
+        # hex
+        # include?
+        # index
+        # initialize_copy
+        # insert
+        # inspect
+        # intern
+        # length
+        # lines
+        # ljust
+        # lstrip
+        # lstrip!
+        # match
+        # match?
+        # next
+        # next!
+        # oct
+        # ord
+        # partition
+        # prepend
+        # replace
+        # reverse
+        # reverse!
+        # rindex
+        # rjust
+        # rpartition
+        # rstrip
+        # rstrip!
+        # scan
+        # scrub
+        # scrub!
+        # setbyte
+        # shellescape
+        # shellsplit
+        # size
+        # slice
+        # slice!
+        # split
+        # squeeze
+        # squeeze!
+        # start_with?
+        # strip
+        # strip!
+        # sub
+        # sub!
+        # succ
+        # succ!
+        # sum
+        # swapcase
+        # swapcase!
+        # to_c
+        # to_f
+        # to_i
+        # to_r
+        # to_s
+        # to_str
+        # to_sym
+        # tr
+        # tr!
+        # tr_s
+        # tr_s!
+        # undump
+        # unicode_normalize
+        # unicode_normalize!
+        # unicode_normalized?
+        # unpack
+        # unpack1
+        # upcase
+        # upcase!
+        # upto
+        # valid_encoding?
 
         def method_missing(symbol, *args)
           if symbol === :in_italiano
