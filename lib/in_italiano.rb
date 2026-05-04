@@ -52,6 +52,8 @@ class String
   prepend InItaliano::Classes::String::InstanceMethodsPatch
 end
 
+Cordicella = String
+
 class TrueClass
   prepend InItaliano::Classes::TrueClass::InstanceMethodsPatch
 end

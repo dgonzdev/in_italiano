@@ -191,11 +191,16 @@ module InItaliano
         end
 
         def chomp(line_sep = $/)
-          ::InItaliano.last_class = :string
-          ::InItaliano.last_method = :chomp
-
           super
         end
+        alias_method :accorciare, :chomp
+
+        # def chomp(line_sep = $/)
+        #   ::InItaliano.last_class = :string
+        #   ::InItaliano.last_method = :chomp
+
+        #   super
+        # end
 
         def chomp!(line_sep = $/)
           ::InItaliano.last_class = :string
